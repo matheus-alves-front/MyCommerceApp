@@ -1,12 +1,15 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  position: fixed;
   width: 100%;
+  max-width: 600px;
   height: 100%;
-  margin: auto;
+  position: fixed;
   top: 80px;
   bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
   z-index: -1;
   display: flex;
   align-items: center;
