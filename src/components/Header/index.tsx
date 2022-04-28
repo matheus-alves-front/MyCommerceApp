@@ -1,8 +1,4 @@
 import { useState } from 'react';
-import {
-  BrowserRouter,
-  NavLink
-} from "react-router-dom";
 
 // https://react-icons.github.io/react-icons/icons?name=md
 import { MdOutlineMenu, 
@@ -20,12 +16,12 @@ export function HeaderNav() {
 
   return (
       <Container>
-        <nav className={isMenuOpen ? 'opened' : ''}>
+        {/* <nav className={isMenuOpen ? 'opened' : ''}>
           <MdClose onClick={() => setIsMenuOpen(false)} className="Icon" />
             <NavLink to="/" className='menuItem'><MdSpaceDashboard className="Icon" /> Pedidos</NavLink>
             <NavLink to="/" className='menuItem'><MdOutlinePersonalInjury className="Icon" /> Profile</NavLink>
           <MdLightbulb className='Icon'/>
-        </nav>
+        </nav> */}
         
         <a href=""><BsInstagram  className="Icon" /></a>
         <img src={Logo} className="Logo" />

@@ -12,10 +12,6 @@ export const Container = styled.div`
   perspective: 600px;
   transform-style: preserve-3d;
 
-  @media (min-width: 1440px) {
-    max-width: 300px;
-  }
-
   .img {
     background-color: var(--shape);
     height: 100%;

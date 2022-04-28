@@ -1,5 +1,3 @@
-import { useEffect, useRef } from "react";
-import videojs, { VideoJsPlayer } from "video.js";
 import { Container } from "./styles";
 
 export function BackgroundPlayer() {

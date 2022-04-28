@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { BaseUrlApi, PhonesUrlApi, productsApi } from "../api/productsApi";
+import { BaseUrlApi, PhonesUrlApi } from "../api/productsApi";
 import { Container } from "../styles/backoffice";
 
 interface ProductTypes {

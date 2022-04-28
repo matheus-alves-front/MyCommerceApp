@@ -1,11 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
-import {
-  Router,
-  Routes,
-  Route,
-  Link,
-  BrowserRouter
-} from "react-router-dom";
+import { useState } from 'react'
 
 // components
 import { HeaderNav } from './components/Header';
@@ -18,14 +11,9 @@ function App() {
   
   return (
     <div className="App">
-      <BrowserRouter>
         <HeaderNav />
         <BackgroundPlayer />
-        <Routes>
-          <Route path='/' element={<MainPage/>} />
-          <Route path='/backoffice' element={<Backoffice />} />
-        </Routes>
-      </BrowserRouter>
+        <MainPage/>
     </div>
   )
 }
