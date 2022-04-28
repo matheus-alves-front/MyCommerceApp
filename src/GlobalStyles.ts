@@ -58,9 +58,11 @@ export const GlobalStyle = createGlobalStyle`
     cursor: not-allowed;
   }
 
-  #App {
+  .App {
     position: relative;
     background-color: linear-gradient(180deg, rgba(55,6,6,1) 15%, rgba(0,0,0,1) 48%, rgba(55,6,6,1) 79%);
+    
+    margin-top: 140px;
   }
 
   .react-modal-overlay {

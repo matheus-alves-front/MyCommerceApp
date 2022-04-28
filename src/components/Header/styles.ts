@@ -5,10 +5,13 @@ export const Container = styled.header`
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 
-  padding: 25px;
-  margin: 0 1rem;
+  padding: 10px 25px;
+  margin: 0 .7rem;
   border-radius: 0 0 1rem 1rem;
   box-shadow: 0px 5px 16px -9px #FFF;
   background: linear-gradient(180deg, rgba(55,6,6,1) 10%, rgba(0,0,0,1) 76%);
