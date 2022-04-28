@@ -9,6 +9,7 @@ export const Container = styled.section`
   padding: 20px 25px;
   margin-top: 10px;
   overflow-x: hidden;
+  padding-bottom: 100px;
 
   @media (min-width: 1440px) {
     grid-template-columns: repeat(auto-fit, minmax(240px, 350px));
