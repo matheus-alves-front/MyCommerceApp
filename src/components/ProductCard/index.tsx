@@ -11,6 +11,7 @@ interface ProductTypes {
   Marca: string;
   Cor: string;
   Preco: number;
+  PrecoAntigo: number;
   Memoria: string;
   Imagem: string;
   Descrição: string;
@@ -50,7 +51,7 @@ export function ProductCard() {
           </div>
           <div className="details">
             <span className="name">{product.Nome}</span>
-            <span className="oldPrice"><del>R$500,00</del></span>
+            <span className="oldPrice"><del>{currencyFormat(product.PrecoAntigo)}</del></span>
             <span className="price">{currencyFormat(product.Preco)}</span>
             <button>Detalhes</button>
           </div>
