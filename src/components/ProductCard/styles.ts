@@ -93,7 +93,6 @@ export const Container = styled.div`
       bottom: 0px;
       transform: rotateX(100.4deg) translateZ(0px);
       opacity: 0;
-      z-index: -1;
       transition: 1s ease;
   
       .info {
@@ -143,7 +142,6 @@ export const Container = styled.div`
   &:hover {
     .informations {
       transform: rotateX(0deg) translateZ(0px);
-      z-index: 0;
       opacity: 1;
     }
     .details {

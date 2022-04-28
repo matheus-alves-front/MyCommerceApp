@@ -8,6 +8,7 @@ export const Container = styled.section`
   justify-content: space-between;
   padding: 20px 25px;
   margin-top: 10px;
+  overflow-x: hidden;
 
   @media (min-width: 1440px) {
     grid-template-columns: repeat(auto-fit, minmax(240px, 350px));
