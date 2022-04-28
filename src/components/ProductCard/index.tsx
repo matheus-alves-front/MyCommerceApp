@@ -1,7 +1,7 @@
 import { Container } from './styles'
 import { useEffect, useState } from 'react';
 
-import { BaseUrlApi, PhonesUrlApi } from "../../api/productsApi";
+import { BaseUrlApi, PhonesUrlApi, MockApi } from "../../api/productsApi";
 
 import { BsWhatsapp } from 'react-icons/bs';
 
@@ -19,10 +19,14 @@ interface ProductTypes {
 export function ProductCard() {
   const [Products, setProducts] = useState<ProductTypes[]>([])
 
+  // useEffect(() => {
+  //   fetch(BaseUrlApi + PhonesUrlApi)
+  //   .then(response => response.json())
+  //   .then(data => setProducts(data));
+  // }, [])
+
   useEffect(() => {
-    fetch(BaseUrlApi + PhonesUrlApi)
-    .then(response => response.json())
-    .then(data => setProducts(data));
+    setProducts(MockApi.phones);
   }, [])
 
   function currencyFormat<T>(num: number) {
